@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Update Patient Etat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link  rel="stylesheet" th:href="@{/css/login.css}" type="text/css" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body>
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>Update Patient Etat</h1>
+		<div class="main-agileinfo">
+			 <div class="agileits-top"> 
+				<form th:action="@{/medecin/updatepatient/{id} (id=${patient.id})}" th:object="${patient}" method="post">
+					
+					<input class="text email" th:field="*{nom}" type="text" name="email" placeholder="Nom" >
+					<input class="text" th:field="*{prenom}" type="text" name="password" placeholder="Prenom" ><br>
+					 <span th:if="${#fields.hasErrors('prenom')}" th:errors="** {prenom}"></span>
+					 <input class="text" th:field="*{dossierMedical.stade}" type="text" name="password" placeholder="Stade" ><br>
+					 <input class="text" th:field="*{dossierMedical.niveaucardiologie}" type="text" name="password" placeholder="cardiologie" ><br>
+					 <input class="text" th:field="*{dossierMedical.niveaunephrologie}" type="text" name="password" placeholder="nephrologie" ><br>
+					 <input class="text" th:field="*{dossierMedical.niveauneurologie}" type="text" name="password" placeholder="neurologie" ><br>
+					 <input class="text" th:field="*{dossierMedical.niveauneonatalogie}" type="text" name="password" placeholder="neonatalogie" ><br>
+					  <input class="text" th:field="*{dossierMedical.niveauhematologie}" type="text" name="password" placeholder="hematologie" ><br>
+					
+					
+					<div class="wthree-text">
+						<label class="anim">
+							
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="Update Patient Etat">
+				</form >
+				
+			</div>
+		</div>
+		<!-- copyright -->
+		<div class="colorlibcopy-agile">
+			
+		</div>
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+</body>
+</html>

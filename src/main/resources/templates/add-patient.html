@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Add Patient</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link  rel="stylesheet" th:href="@{/css/login.css}" type="text/css" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body>
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>Add Patient</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+			
+				<form th:action="@{/admin/addpatient}" th:object="${patient}" method="post">
+					
+					<input class="text email" th:field="*{nom}" type="text" name="email" placeholder="Nom" required="">
+					<input class="text" th:field="*{prenom}" type="text" name="password" placeholder="Prenom" required=""><br>
+					 <span th:if="${#fields.hasErrors('prenom')}" th:errors="** {prenom}"></span>
+		
+						<input type="radio" style=" width: 25px;height: 25px;" th:field="*{sexe}" value="Male"/><label>Male</label>
+  
+							<div style="position: relative; display: inline; left: 50px;">
+						<input type="radio" style=" width: 25px;height: 25px;" th:field="*{sexe}" value="Female"/> <label>Female</label><br><br>
+						</div>
+		 			<input class="text "  th:field="*{date}"  type="date" name="password" placeholder="Date" required=""><br><br>	
+						
+						<select class="select-css" th:field="*{nb_Enfant}">
+				    
+				    <option th:value="'1'" th:text="1"></option>
+				     <option th:value="'2'" th:text="2"></option>
+				    <option th:value="'3'" th:text="3"></option>
+				    <option th:value="'4'" th:text="4"></option>
+				    <option th:value="'5'" th:text="5"></option>
+				    
+				</select><br>
+				<select class="select-css" th:field="*{etat_Civil}">
+				    
+				    <option th:value="'célibataire'" th:text="célibataire"></option>
+				     <option th:value="'divorcée'" th:text="divorcée"></option>
+				    <option th:value="'mariée'" th:text="mariée"></option>
+				   
+				    
+				</select><br>
+
+		
+					
+					<input class="text "  th:field="*{profession}"  type="text" name="password" placeholder="Profession" required=""><br>
+					
+					
+					
+					<div class="wthree-text">
+						<label class="anim">
+							
+						</label>
+						<div class="clear"> </div>
+					</div>
+					
+				 	<input type="submit" value="Add Patient">	
+		
+				
+				</form >
+				
+			</div>
+		</div>
+		<!-- copyright -->
+		<div class="colorlibcopy-agile">
+			
+		</div>
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+</body>
+</html>

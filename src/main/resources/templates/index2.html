@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://www.resortmedical.net/maison-retraite.php -->
+<html xmlns:th="http://www.thymeleaf.org" lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>RESORT MEDICAL</title>
+<link rel="stylesheet" th:href="@{/css2/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/css2/bootstrap-theme.min.css}">
+<link th:href="@{/css2/raleway.css}" rel="stylesheet">
+<link rel="stylesheet" th:href="@{/css2/font-awesome.css}">
+<link th:href="@{/css2/playfair-display.css}" rel="stylesheet">
+<link rel="stylesheet" th:href="@{/css2/owl.carousel.min.css}">
+<link rel="stylesheet" th:href="@{/css2/owl.theme.default.min.css}">
+<link rel="stylesheet"  th:href="@{/css2/themify-icons.css}">
+<link rel="stylesheet" th:href="@{/css2/animate.css}">
+<link rel="stylesheet" th:href="@{/css2/bootstrap-datepicker3.css}">
+<link rel="stylesheet" type="text/css" th:href="@{/css2/jquery-ui.min.css}">
+<link rel="stylesheet" th:href="@{/css2/nice-select.css}">
+<link th:href="@{/css2/lightgallery.css}" rel="stylesheet">
+<link th:href="@{/css2/bootstrap-datetimepicker.min.css}" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" th:href="@{/css2/semantic.css}">
+<link rel="stylesheet" th:href="@{/css2/paraxify.css}">
+<link rel="stylesheet" th:href="@{/css2/style.css}"></head>
+<body class="" onload="loadvideo()" style="">
+<!--load page-->
+<nav class="visible-sm visible-xs mobile-menu-container mobile-nav vk-menu-mobile-nav">
+  <div class="menu-mobile-nav navbar-toggle"> <span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i></span> </div>
+  <div id="cssmenu" class="animated"><div id="menu-line" style="width: 0px; left: 0px;"></div>
+    <div class="uni-icon-close"> <span class="ti-close"></span> </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/admin/index1">Accueil</a> </li>
+      <li><a href="/admin/index2">LA RESIDENCE</a></li>
+    
+      <li><a href="/admin/index3">PRIX ET PRESTATIONS </a></li>
+      <li class="has-sub"><span class="submenu-button"></span>
+        <ul class="sub-menu1 animated fadeIn" style="display: block;">
+          <li><a href="http://www.resortmedical.net/formalite.php">Formalités d'admission</a></li>
+          <li><a href="http://www.resortmedical.net/questionnaire-medical.php">Questionnaire  médical</a></li>
+          <li><a href="http://www.resortmedical.net/fiche-administrative.php">Fiche de renseignements</a></li>
+        </ul>
+      </li>
+      <li><a href="/admin/index4">CONTACT</a></li>
+    </ul>
+    <div class="uni-nav-mobile-bottom"> </div>
+    <div class="clearfix"></div>
+  </div>
+</nav>
+<!-- End mobile menu -->
+<div id="wrapper-container" class="site-wrapper-container">
+<header class="site-header header-default header-sticky">
+  <div class="vk-top-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="vk-top-header-left">
+            <div style="  color: #fff;font-size: 14px;    font-family: &#39;Raleway&#39;, sans-serif; text-align:center;    line-height: 20px;"><i class="ti-email"></i>  Vous avez une question?<br> <a class="font-14 mr-4" style="  color: #fff;" href="mailto:resortmedical@outlook.com">resortmedical@outlook.com</a></div>
+          </div>
+        </div>
+		
+		        <div class="col-md-4 vk-top-header-left" style="text-align:center !important">
+          <div class="vk-top-header-left" style="text-align:center !important;width: 100%;">
+            <div style="  color: #fff;font-size: 18px;    font-family: &#39;Cinzel Decorative&#39;; text-align:center;    font-family:Cinzel Decorative;    line-height: 20px;">EHPAD Grande dépendance</div>
+          </div>
+        </div>
+		
+		
+        <div class="col-md-4 vk-top-header-right">
+          <div class="vk-top-header-right" style="float:right">
+             <ul><li><div style="  color: #fff;font-size: 14px;    font-family: &#39;Raleway&#39;, sans-serif; text-align:center;    line-height: 20px;"><i class="ti-mobile"></i>  Voulez-vous clarifier? <br><a class="font-14 mr-4" style="  color: #fff;" href="tel:+21626250668">+216 26 25 06 68</a></div></li></ul>
+		    
+		   
+		   
+		   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 100px;"><div class="vk-main-menu animated uni-sticky" style="width: 1349px; position: fixed; top: 0px; z-index: inherit;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-xs-9">
+          <div class="wrapper-logo"> <a href="http://www.resortmedical.net/" class="logo-default" title="Resort Medical" style=" line-height: 25px; text-align:center;color:#00252C;font-family: &#39;Cinzel Decorative&#39;, sans-serif; font-size:22px; font-weight:bold">RESORT <span style="color: #BA6B00;">MEDICAL</span> <br>
+            <span style=" font-size:14px; margin-left:10px;    font-family: &#39;Raleway&#39;, sans-serif;    font-weight: normal;">Tunisie - Gammarth</span> </a> </div>
+        </div>
+        <div class="col-md-9">
+          <nav class="main-navigation">
+            <div class="inner-navigation">
+              <ul class="nav-bar">
+                <li><a href="/admin/index1" title="Accueil" class="">Accueil</a> </li>
+                <li><a href="/admin/index2" title="La RESIDENCE" class="active">LA RESIDENCE</a></li>
+               
+                <li><a href="/admin/index3" title="PRIX ET PRESTATIONS" class="">PRIX ET PRESTATIONS </a></li>
+                <li>
+                  <ul class="sub-menu1 animated fadeIn">
+                    <li><a href="http://www.resortmedical.net/formalite.php">Formalités d'admission</a></li>
+                    <li><a href="http://www.resortmedical.net/questionnaire-medical.php">Questionnaire  médical</a></li>
+                    <li><a href="http://www.resortmedical.net/fiche-administrative.php">Fiche de renseignements</a></li>
+                  </ul>
+                </li>
+                <li><a href="/admin/index4" title="CONTACT" class="">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</header>
+<!-- Mobile nav -->
+<style>
+p {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 2.14;
+	
+    color: #555;
+}
+h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    color: #00252C;
+    margin-top: 11px;
+    margin-bottom: 25px;
+}
+.vk-blog-list-body ul { list-style:circle}
+li {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 35px;
+	
+    color: #555;
+}
+</style>
+<div id="main-content" class="site-main-content">
+
+        <!--BENGIN CONTENT HEADER-->
+        <section class="site-content-area">
+            <div class="vk-gallery-grid-full-banner">
+                <div class="vk-about-banner">
+                    <div class="vk-about-banner-destop">
+                        <div class="vk-banner-img" style=""></div>
+                        <div class="vk-about-banner-caption">
+                            <h2>La résidence</h2>
+                            <h3>
+                                <a href="http://www.resortmedical.net/maison-retraite.php#">RESORT MEDICAL GAMMARTH</a>
+                                
+								
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vk-blog-list-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+						
+						
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<div class="services">
+
+<div style="">
+<style>
+.services img {
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;}
+
+</style>
+
+
+
+
+<p><strong style="color:#00252C;font-family: Cinzel Decorative, sans-serif;">RESORT</strong> <strong style="color:#BA6B00;font-family: Cinzel Decorative, sans-serif;">MEDICAL&nbsp;</strong>est implanté dans le nord de la TUNISIE.<br>
+La résidence médicalisée pour personnes âgées est à GAMMARTH en bord de  mer, en zone touristique et résidentielle, à 20 minutes de l’aéroport de Tunis  Carthage. La côte nord, véritable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; «  côte d’azur » pour les tunisiens est connue pour ses sites prestigieux de  CARTHAGE, SIDI BOUSAÏD, LA MARSA et GAMMARTH, le long de la méditerranée. LA  BAIE DE GAMARTH est devenue la nouvelle zone résidentielle VIP du nord de  Tunis, autour de son parcours de golf, de ses hôtels, et de sa marina.</p>
+<div style="float: left; margin-left:5px">
+<img class="images_a" th:src="@{/css2/0-10-2018.jpg}" style=" width:100%  !important; margin:0 0px; height:"><!--<img class="images_a" src="images/11.jpg" style=" width: !important; float:; margin:0 10px" />---></div>
+	
+
+  <div style="clear:both"></div>
+<!--<img class="images_a" src="images/20170.jpg" style=" width:350px !important; height:; float:; margin:0 10px">
+<img class="images_a" src="images/20171.jpg" style=" width:350px !important; height:; float:; margin:0 10px">
+<img class="images_a" src="images/20172.jpg" style=" width:700px !important; height:; float:; margin:10px 0 10px 20px">
+
+
+<img class="images_a" src="images/0022016.jpg" style=" width:120px !important; height:200px; float:; margin:0 10px"><img class="images_a" src="images/0032016.jpg" style=" width:120px !important; height:200px;float:; margin:0 10px" />
+<img class="images_a" src="images/0042016.jpg" style=" width:120px !important; height:200px;float:; margin:0 10px 0 80px" />
+<img class="images_a" src="images/20173.jpg" style=" width:120px !important; height:200px;float:; margin:0 10px" />
+<img class="images_a" src="images/0052016.jpg" style=" width:120px !important; height:200px;float:; margin:0 10px" />
+<div style="clear:both"></div>
+	  <p>Notre  centre fonctionne sur le mod&egrave;le des EPHA ou EPHAD fran&ccedil;ais mais avec une plus  grande pr&eacute;sence du personnel aidant ou soignant, le personnel est souriant,  disponible et r&eacute;ellement &agrave; l&rsquo;&eacute;coute des r&eacute;sidents.</p>
+	  -->
+ <div style="clear:both"></div>
+ </div>
+  <div style="clear:both"></div>
+</div>
+<!-- ********************************* --->
+<br><div class="services">
+<h4 class="column-title">INFRASTRUCTURES : </h4>
+<div style="">
+
+
+
+  
+ 
+ 
+  <p><strong style="color:#00252C;font-family: Cinzel Decorative, sans-serif;">RESORT</strong> <strong style="font-family: Cinzel Decorative, sans-serif;color:#BA6B00;">MEDICAL&nbsp;</strong><strong>occupe la moitié d’un complexe hôtelier&nbsp;;<br>
+  </strong> ses bâtiments sont  totalement indépendants de la partie touristique de l’hôtel. La superficie du  parc de près de 15&nbsp;000 m², à proximité immédiate du bord de mer avec accès  direct (100 m) est inhabituelle pour une maison de retraite.</p>
+<img class="images_a" th:src="@{/css2/1-10-2018.jpg}" style=" width:100% !important; height:;float:; margin:5px 0px">
+<p>Les espaces sont hors normes à la fois pour la déambulation, les  animations de groupe ou au contraire l’isolement pour ceux qui préfèrent la  tranquillité. &nbsp;Nous sommes sans doute les  seuls EHPAD à proposer des chambres en rez-de-chaussée avec jardin  privatif&nbsp;!<br>
+La verdure est omniprésente et agrémente le quotidien de nos résidents, en  apportant de la couleur de la fraicheur et le bruit des oiseaux.</p> 
+<img class="images_a" th:src="@{/css2/2-10-2018.jpg}" style=" width:100% !important; height:;float:; margin:5px 0px">
+<p>Un ensemble de trois bâtiments de 24 chambres chacun, disposés  autour d’un parc central très bien arboré : oliviers, cactus, citronniers,  orangers, grenadiers et bien sûr ibiscus, bougainvilliers et palmiers forment  le cœur de <strong style="color:;">RESORT MEDICAL</strong>&nbsp;:&nbsp;<strong style="color:;">l’espace  de vie sécurisé</strong>.<br>
+  Et autour de ces bâtiments il y a un grand parc ombragé dans lequel l’air de la  mer s’engouffre pour apporter de la fraicheur en été.</p>
+<p align=""><script language="javascript">function themesweettre(n)
+{
+for(i=1;i<n;i++)
+{
+document.getElementById('theme_'+i).style.display='none';
+}
+document.getElementById('theme_'+n).style.display='block';
+for(i=n+1;i<=24;i++)
+{
+document.getElementById('theme_'+i).style.display='none';
+}
+}
+  </script>
+  <style>
+
+h1{ margin:10px 0; color:#005DA8; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.gallery{width:600px; height: auto; background: none repeat scroll 0 0 #FFFFFF; border:1px solid #B0CBDC; padding:5px;float:left; margin-left:50px}
+.ima-gallery{cursor: pointer;height: 70px;width: 65px; margin-bottom:5px;}
+.div-ima-gallery{ float:left; text-align: center; width:70px}
+.li-description{ list-style:none; color:#06356D}
+.li-description li{margin-bottom:20px;}
+.li-description li strong{color:#EC4A00}
+.panel{ height:350px ; width: 500px; margin-left:50px}
+.imagegra{ width:500px; height:; border-radius: 5px;    box-shadow: 0 3px 3px 2px rgba(0, 0, 0, 0.4); border:none}
+  </style>
+
+</p>
+
+<div style="clear:both"></div>
+
+
+ </div>
+  <div style="clear:both"></div>
+</div>
+
+
+<!-- ********************************* --->
+<br><div class="services">
+<h4 class="column-title">LE CADRE DE VIE : </h4>
+<div style="">
+<p><img class="images_a" th:src="@{/css2/3-10-2018.jpg}" style=" width:100% !important; height:;float:; margin:5px 0px">
+<!--<img class="images_a" src="images/4-10-2018.jpg" style=" width:600px !important; height:;float:; margin:5px 30px">-->
+<img class="images_a" th:src="@{/css2/5-10-2018.jpg}" style=" width:100% !important; height:300px !important;float:; margin:5px 0px">
+<img class="images_a" th:src="@{/css2/6-10-2018.jpg}" style=" width:100% !important; height:300px !important;float:; margin:5px 0px">
+</p>
+
+  
+  </div>
+  <div style="clear:both"></div>
+</div>
+<!-- ********************************* --->
+
+<!-- ********************************* --->
+<br><div class="services">
+<h4 class="column-title" style="text-transform: uppercase; ">un EHPAD FranÇais en Tunisie :  <br><br>
+  <span style="color: ;font-size: 14px;">&nbsp;Une nouvelle approche médicale </span></h4>
+<div style="">
+<p>Notre centre fonctionne sur le modèle des EPHAD français&nbsp;: nous  accueillons des personnes dépendantes ou très dépendantes.<br>
+Beaucoup sont atteintes de maladies neurodégénératives qui demandent beaucoup  de service et de savoir faire. <br>
+<strong>Chez RESORT MEDICAL il y a du personnel en nombre suffisant pour le  confort et la sécurité. Ratio moyen de 2 à 2.5 résidents pour 1 soignant.</strong><br>
+<strong>Tout le personnel paramédical est diplômé et ensuite formé par nos  soins&nbsp;: &nbsp;Auxiliaires de vie, Aides-soignantes, Physiothérapeute,  Infirmières, et Animatrice.</strong><br>
+<br>
+
+</p><p><strong style="color: #BA6B00;">Chez RESORT MEDICAL il y a des infirmières de jour comme de nuit, en nombre  suffisant pour assurer une bonne qualité des soins.&nbsp;</strong><strong>&nbsp; &nbsp;<br>
+  &nbsp;&nbsp;&nbsp;</strong><br>
+  <strong>Nous avons une approche médicale d’empathie cognitive avec nos  résidents,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><br>
+  &nbsp;c’est-à-dire que nous essayons de nous mettre dans la situation de la  personne malade et de comprendre son attitude et donc de l’accepter, de ne pas  contraindre mais d’accompagner. ( il ne s’agit en aucun cas d’empathie  émotionnelle ).&nbsp;<br>
+  <br>
+  C’est ainsi que chez&nbsp;<strong style="color: #BA6B00;">RESORT MEDICAL&nbsp;&nbsp;nous n’avons jamais recours  aux neuroleptiques</strong>&nbsp;ou tranquillisants de toutes sortes pour nos résidents  Alzheimer&nbsp;: ces médicaments ne résolvent rien, au contraire aggravent les  symptômes et la désorientation, et entrainent une perte d’autonomie encore plus  rapide avec un risque de chute.<br>
+  <br>
+  Des activités ludiques sont organisées ainsi que des ateliers cognitifs.<strong> </strong><br>
+  <strong style="color:#BA6B00;">RESORT</strong> <strong style="color:#00252C;">MEDICAL&nbsp;</strong>a commencé son activité en 2009 et vraiment nous  avons le sentiment justifié que nos résidents y sont heureux, respectés dans  une ambiance qui est aussi douce que le climat.<br>
+  Nous avons statistiquement 1 malade sur 3 dont l’état de santé s’améliore après  quelques semaines de séjour chez nous, malgré l’âge et la maladie.</p>
+  
+  
+  
+  
+</div>
+  <div style="clear:both"></div>
+</div>
+<!-- ********************************* --->
+<!-- ********************************* --->
+<br><div class="services">
+<h4 class="column-title" style="text-transform: uppercase; ">UNE SALLE DE REEDUCATION : </h4>
+<div style="">
+<p style="color:;">Une salle de rééducation est à disposition de nos résidents. Sur indication du gériatre la rééducation est faite sous la responsabilité de notre physiothérapeute, présent tous les jours (sauf dimanche ).<br>
+La rééducation peut donc se pratiquer dans le centre sans déplacer le résident en ville.
+Une réelle innovation et un confort supplémentaire pour nos résidents.   </p>
+<p><img class="images_a" th:src="@{/css2/8-10-2018.jpg}" style=" width:100% !important; height:300px !important;float:; margin:5px 0px">
+<!--<img class="images_a" src="images/7-10-2018.jpg" style=" width:400px !important; height:300px !important;float:; margin:5px 10px">--></p>
+ <div style="clear:both"></div>
+</div>
+  <div style="clear:both"></div>
+</div>
+<!-- ********************************* --->
+<!-- ********************************* --->
+<br><div class="services">
+<h4 class="column-title" style="text-transform: uppercase; ">UNE SALLE DE JEU  : </h4>
+<div style="">
+<p style="color:;">L’animation se passe très souvent en plein air dans le parc, Une salle de  jeu pour les jours de mauvais temps est disponible.</p>
+<br>
+<p>
+<img class="images_a" th:src="@{/css2/3-12-2019.jpg}" style=" width:200px !important; height:200px !important;float:; margin:5px 0px">
+<img class="images_a" th:src="@{/css2/2-12-2019.jpg}" style=" width:200px !important; height:200px !important;float:; margin:5px 0px">
+<img class="images_a" th:src="@{/css2/1-12-2019.jpg}" style=" width:200px !important; height:200px !important;float:; margin:5px 0px"></p>
+<p>
+Une&nbsp;<strong style="color:#00252C;">animatrice</strong>&nbsp;est présente du lundi au samedi pour divertir les résidents,  éviter le repli sur soi, stimuler les fonctions cognitives, mais aussi pour  organiser les promenades dans le parc de l’hôtel, autour de sa grande piscine,  ou les sorties à la plage qui est située à moins de 100m, en accès direct.
+
+ </p>
+</div>
+  <div style="clear:both"></div>
+</div>
+<!-- ********************************* --->
+<!-- ********************************* --->
+<br><div class="services">
+<h4 class="column-title" style="text-transform: uppercase; ">LA SALLE D'URGENCES  : </h4>
+<div style="">
+<p><img class="images_a" th:src="@{/css2/9-10-2018.jpg}" style=" width: !important; height: !important;float:; margin:5px 10px"><img class="images_a" th:src="@{/css2/10-10-2018.jpg}" style=" width: !important; height: !important;float:; margin:5px 10px"><img class="images_a" th:src="@{/css2/10-10-20190.jpg}" style=" width: !important; height: !important;float:; margin:5px 10px"></p>
+<p>C’est une salle à usage interne destinée à nos résidents.<br>
+  Elle est utilisée en cas de malaise, en cas de nécessité de placer un résident  sous oxygène, ou de faire une surveillance cardiologique.<br>
+  Elle est également utile quand nous recevons des résidents qui sortent d’un  service de réanimation d’une clinique&nbsp;: le résident y est surveillé alors  qu’il a été autorisé à sortir de la clinique.<br>
+  Il y a également un appareil de défibrillation et tout le matériel nécessaire  pour perfusions, alimentation parentérale, aspiration trachéale etc..<br>
+  Un lit médical et un matelas anti-escarre aide au confort du malade et des  infirmières.<br>
+  Cette salle d’urgence est mitoyenne à l’infirmerie. </p>
+<p style="color:;">. </p>
+
+ <div style="clear:both"></div>
+</div>
+  <div style="clear:both"></div>
+</div>
+<!-- ********************************* --->
+<!-- ********************************* --->
+<br><div class="services">
+<h4 class="column-title" style="text-transform: uppercase; ">LE CENTRE ALZHEIMER   : </h4>
+<div style="">
+<p>Notre maison de retraite internationale accueille les personnes atteintes  des maladies dégénératives dont l'ALZHEIMER reste la démence la plus fréquente  et la plus connue.<br>
+  <br>
+Un des 3 bâtiments permet leur accueil.<br>
+<br>
+&nbsp;Beaucoup de nos résidents sont atteints de cette pathologie  neuro-dégénérative, et ceci quel que soit le niveau de dépendance.<br>
+<br>
+Mais en marge de cette maladie d’Alzheimer qui touche presque toutes les familles  en France et dans le monde, il existe d’autres maladies neurodégénératives  parfois hélas encore plus invalidantes, d’évolution plus rapide, et pouvant se  déclarer chez l’adulte plus jeune, de moins de 60 ans. Il n’y a dans ce cas aucune  possibilité d’aller en EHPAD en France.<br>
+C’est dire la très grande difficulté pour les familles de placer ces malades  dans des établissements spécialisés.  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<em style="color:#00AEE9">. La prise en charge par le  personnel, avec douceur et gentillesse, la liberté qui leur est donnée de  pouvoir déambuler à leur guise sans danger pour eux même ou pour les autres  résidents, dans un parc fermé, apaisant, coloré et vivant, est le meilleur des  traitements ….</em>
+</div>
+  <div style="clear:both"></div>
+</div>
+<!-- ********************************* --->
+<br><div class="services">
+<h4 class="column-title">LES CHAMBRES  : </h4>
+<div style="">
+ <ul>
+      <li style="color:;"><strong style="color:#BA6B00;text-transform: uppercase;">LES CHAMBRES MEDICALISEES </strong><br>
+          <p><strong>Les chambres médicalisées sont équipées d’un lit médical  électrique multi-positions et de matelas anti-escarres. La salle de douche est  accessible en fauteuil roulant et possède une douche à l’italienne. </strong><br>
+                <strong>Il y a selon le cas une terrasse ou un bow-windows avec accès  direct au jardin privé.</strong></p>
+      </li>
+    </ul>
+	<p><strong style="color:#BA6B00;"> Toutes les chambres sont climatisées ( climatisation réversible chaud/froid ).</strong></p>
+	<img class="images_a" th:src="@{/css2/11-10-2018.jpg}" style=" width: 100% !important; height: !important;float:; margin:5px 0px">
+	<img class="images_a" th:src="@{/css2/12-10-2018.jpg}" style=" width:100% !important; height: !important;float:; margin:5px 0px">
+	<img class="images_a" th:src="@{/css2/13-10-2018.jpg}" style=" width:100% !important; height: !important;float:; margin:5px 0px">
+	<img class="images_a" th:src="@{/css2/14-10-2018.jpg}" style=" width:100% !important; height: !important;float:; margin:5px 0px">
+	<!--<img class="images_a" src="images/15-10-2018.jpg" style=" width:300px !important; height: !important;float:; margin:5px 10px">--->
+	<p><strong>Les chambres si besoin sont équipées d’appareil à oxygène, de pied à sérum,  de chariot de soins pour escarres, pour alimentations par sonde nasogastrique  ou sonde de gastrostomie etc…</strong><br>
+	  <br>
+      </p>
+	<!--<p><strong style="color:#00252C;">Notre r&eacute;sidence n&rsquo;est pas un 5* h&ocirc;telier, mais une magnifique r&eacute;sidence m&eacute;dicalis&eacute;e  sp&eacute;cialement adapt&eacute;e  aux personnes d&eacute;pendantes ou tr&egrave;s d&eacute;pendantes.</strong> <strong style="color:;">Les chambres si besoin sont &eacute;quip&eacute;es d&rsquo;appareil &agrave; oxyg&egrave;ne, de pied  &agrave; s&eacute;rum, de chariot de soins pour escarres, pour alimentations par sonde  nasogastrique ou sonde de gastrostomie etc&hellip;</strong></p>-->
+	<p><!--<img class="images_a" src="images/16-10-2018.jpg" style=" width: 600px !important; height: !important;float:; margin:5px 10px">--->
+	    <img class="images_a" th:src="@{/css2/17-10-2018.jpg}" style=" width: 100% !important; height: !important;float:; margin:5px 0px">
+	  
+	    <!--
+  
+  <p>Nous proposons quatre types de  chambres.</p>
+ 
+   
+    <ul>
+      <li style="color:;"><strong style="color:#BA6B00;text-transform: uppercase;">Chambres STANDARD&nbsp;</strong>: Pour les personnes sans d&eacute;ficit neurologique, des  chambres h&ocirc;teli&egrave;res individuelles en rez de chauss&eacute;e avec grand lit, t&eacute;l&eacute;vision  avec chaines fran&ccedil;aises, salle de bain avec baignoire, placards, terrasse en  rez de jardin&nbsp;; le tout pour une surface de 30 m&sup2;.</li>
+    </ul>
+  
+    <img class="images_a" src="images/paresort-198.jpg" style=" width:400px !important; height:250px;float:left; margin:20px" /><img class="images_a" src="images/paresort-199.jpg" style=" width:250px !important; height:250px;float:left; margin:20px">
+  <div style="clear:both"></div>
+  
+  
+  
+   <ul>
+      <li style="color:;"><strong style="color:#BA6B00;text-transform: uppercase;"> 	Chambres m&Eacute;dicalis&Eacute;es </strong>: Des  chambres m&eacute;dicalis&eacute;es avec lit &eacute;lectrique multi-positions, douche accessible en  fauteuil roulant, t&eacute;l&eacute;vision &eacute;cran plat, placards,&nbsp; et terrasse en rez de chauss&eacute;e&nbsp;; le tout  pour un surface de 30 m&sup2;.</li>
+    </ul>
+  
+    <img class="images_a" src="images/paresort-200.jpg" style=" width:400px !important; height:250px;float:left; margin:20px" /><img class="images_a" src="images/paresort-201.jpg" style=" width:250px !important; height:250px;float:left; margin:20px">
+  <div style="clear:both"></div>
+  
+  
+   <ul>
+      <li style="color:;"><strong style="color:#BA6B00;text-transform: uppercase;"> 	CHAMBRES m&Eacute;dicalis&Eacute;es LUXE </strong>: Des  chambres m&eacute;dicalis&eacute;es plus grandes, avec lit m&eacute;dicalis&eacute; multi-positions, douche  accessible en fauteuil roulant, et un bow-windows donnant acc&egrave;s &agrave; un jardin  privatif agr&eacute;ment&eacute; d&rsquo;un parasol, d&rsquo;une table de jardin et de chaises&nbsp;; le  tout pour une surface de 36 m&sup2;</li>
+    </ul>
+  
+    <img class="images_a" src="images/paresort-202.jpg" style=" width:330px !important; height:250px;float:left; margin:20px" /><img class="images_a" src="images/paresort-203.jpg" style=" width:330px !important; height:250px;float:left; margin:20px">
+  <div style="clear:both"></div>
+  
+   <ul>
+      <li style="color:;"><strong style="color:#BA6B00;text-transform: uppercase;">Chambres AVEC SUITE&nbsp;&nbsp;</strong>: suites  de 55 m&sup2;&nbsp;: entr&eacute;e, tr&egrave;s grande salle d&rsquo;eau avec acc&egrave;s en fauteuil roulant  ( douche &agrave; l&rsquo;italienne ), grande chambre avec lit m&eacute;dicalis&eacute; multi-positions,  prolong&eacute;e par son bow-windows et son jardin privatif, t&eacute;l&eacute;vision &eacute;cran plat,  placards, son&nbsp; salon avec canap&eacute; 3 places  + fauteuil et placards,&nbsp; donnant sur sa  terrasse.</li>
+    </ul>
+  
+    <img class="images_a" src="images/paresort-204.jpg" style=" width:330px !important; height:250px;float:left; margin:20px" /><img class="images_a" src="images/paresort-205.jpg" style=" width:330px !important; height:250px;float:left; margin:20px"><img class="images_a" src="images/paresort-206.jpg" style=" width:330px !important; height:250px;float:left; margin:20px"><img class="images_a" src="images/paresort-207.jpg" style=" width:330px !important; height:250px;float:left; margin:20px">
+  <div style="clear:both"></div>
+  
+  -->
+	  </p>
+	<!--<p style="color:;"><strong>Certaines chambres gardent leur aspect plus neutre et moins  m&eacute;dical pour les personnes valides.</strong><br />
+      <strong>Toutes nos chambres donnent acc&egrave;s &agrave; un jardin privatif.</strong><br />
+      <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--------------------------------------------</strong><br />
+      <strong>RESORT MEDICAL a une entr&eacute;e priv&eacute;e sp&eacute;cialement con&ccedil;ue pour les  ambulances et les familles.</strong> </p>--->
+</div>
+  <div style="clear:both"></div>
+</div>
+<!-- ********************************* --->
+  <!-- ********************************* 
+<br /><div class="services">
+<h4 class="column-title" style="text-transform: uppercase; ">LES PRESTATIONS DE <strong style="color:#00252C;">RESORT</strong> <strong style="color:;">MEDICAL&nbsp;</strong>  : </h4>
+<div style="">
+<p>
+  <ul style="color:;">
+
+       <li>H&eacute;bergement en chambre       individuelle</li>
+       <li>Chambre avec entr&eacute;e, placards       et salle de bain</li>
+       <li>T&eacute;l&eacute;vision et chaines       fran&ccedil;aises</li>
+       <li>Petit d&eacute;jeuner, d&eacute;jeuners,       go&ucirc;ters, diners et boissons tout au long de la journ&eacute;e</li>
+       <li>Les repas peuvent &ecirc;tre pris en       chambre si besoin, pour certaines personnes d&eacute;pendantes</li>
+       <li>Aide aux repas, suivi du r&eacute;gime       &eacute;ventuel</li>
+       <li>Aide compl&egrave;te ou partielle &aacute; la       toilette</li>
+       <li>Aide &aacute; l'habillage, au       d&eacute;shabillage</li>
+       <li>Aide &aacute; la marche par les       soignants ou le kin&eacute;sith&eacute;rapeute</li>
+       <li>Aide aux promenades jusqu'en       bord de mer en fonction des possibilit&eacute;s de marche</li>
+       <li>Aide &aacute; tous les gestes de la       vie courante</li>
+       <li>Soins des mains et des pieds,       brushings</li>
+       <li>D&eacute;tente sur transat et sous       parasol dans la r&eacute;sidence, ou en bord de piscine si possible</li>
+       <li>Jeux ...</li>
+       <li>Les m&eacute;dicaments sont distribu&eacute;s       par les infirmi&egrave;res</li>
+       <li>L'entretien du linge de maison       : draps, oreillers, serviettes</li>
+       <li>L'entretien du linge personnel       marqu&eacute; par nos soins : lavage en machine et repassage</li>
+       <li>---------------------------------
+	  <ul>
+           <ul type="circle">
+             <li>Des aides soignantes sont        pr&eacute;sentes de jour comme de nuit en nombre suffisant pour satisfaire au        confort de nos r&eacute;sidents et &agrave; leur s&eacute;curit&eacute;.</li>
+             <li style="color:#00252C;">Des infirmiers et infirmi&egrave;res        sont pr&eacute;sents de jour comme de nuit, ce qui est une r&eacute;elle innovation en        Tunisie sur la base d&rsquo;une infirmi&egrave;re pour10 r&eacute;sidents&nbsp; ( en France c&rsquo;est une infirmi&egrave;re pr&eacute;sente        pour 60 &agrave; 90 r&eacute;sidents&nbsp;!) <br />
+               <br />
+             </li>
+            </ul>
+           <li>&nbsp;PRESTATIONS SUPPLEMENTAIRES&nbsp;: <br />
+             <ul>
+                <li>Forfait  incontinence : <strong style="color:#00252C;">+ 50 &euro;</strong></li>
+               <li>Une surveillance  individuelle continue le jour ou la nuit peut &ecirc;tre organis&eacute;e sur demande  moyennant un forfait suppl&eacute;mentaire ou en cas de n&eacute;cessit&eacute; m&eacute;dicale.</li>
+             </ul>
+            .</li>
+        </ul>
+	  </li>
+  </ul>
+  <strong>&nbsp;&nbsp;</strong></p>
+<div style="clear:both"></div>
+</div>
+  <div style="clear:both"></div>
+</div>
+<!-- ********************************* --->
+ <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+	
+							
+						
+                           </div>
+                          
+						  
+                        <div class="col-md-4">
+
+                            <div class="vk-blog-list-body-right">
+                          
+						  
+                               						
+								  <div class="vk-blog-list-right-category">
+                                    <h4>Nos Services</h4>
+                                    <ul>
+                                        <li><a href="http://www.resortmedical.net/MAISON_DE_RETRAITE_INTERNATIONALE.php"><i class="fa fa-angle-right" aria-hidden="true"></i> MAISON DE RETRAITE INTERNATIONALE</a></li>
+                                        <li><a href="http://www.resortmedical.net/alzheimer.php"><i class="fa fa-angle-right" aria-hidden="true"></i> CENTRE ALZHEIMER</a></li>
+                                        <li><a href="http://www.resortmedical-convalescence.com/" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i> CENTRE DE CONVALESCENCE</a></li>
+                                        <li><a href="http://www.resortmedical.net/brochure.php"><i class="fa fa-angle-right" aria-hidden="true"></i> Téléchargez la brochure</a></li>
+										
+                                    </ul>
+                                </div>									 
+                                                                 
+								
+                            </div>
+
+                        </div>                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END CONTENT ABOUT-->
+  <img th:src="@{/css2/photo2.png}" style="position: absolute; left: 0%;top: 27%;" />
+<footer class="site-footer footer-default">
+  <div class="footer-main-content">
+    <div class="container">
+      <div class="row">
+        <div class="footer-main-content-elements">
+          <div class="footer-main-content-element col-sm-4">
+            <aside class="widget">
+              <div class="vk-widget-footer-1">
+                <div class="widget-title"> <a href="http://www.resortmedical.net/maison-retraite.php#" class="logo-default" style=" line-height: 25px; text-align:center;color:#fff;font-family: &#39;Cinzel Decorative&#39;, sans-serif; font-size:22px; font-weight:bold">RESORT <span style="color: #BA6B00;">MEDICAL</span> <br>
+                  <span style=" font-size:14px; margin-left:10px;    font-family: &#39;Raleway&#39;, sans-serif;    font-weight: normal;">Tunisie - LAC</span> </a> </div>
+                <div class="widget-content">
+                  <div class="vk-widget-content-info">
+                    <p><span class="ti-mobile"></span> (+216) 26 25 06 68</p>
+                    <p><span class="ti-email"></span> resortmedical@outlook.com</p>
+                    <p><span class="ti-location-pin"></span> Centre D'affaires, 14 Rue Imem Abou Hanifa 2078 -<br>   
+                    &nbsp;&nbsp;&nbsp;&nbsp;LAC - TUNISIE</p>
+                  </div>
+                  <div class="vk-widget-content-share">
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </aside>
+          </div>
+   
+          <div class="footer-main-content-element col-sm-3">
+            <aside class="widget">
+              <div class="vk-widget-footer-3">
+                <h3 class="widget-title">RESORT MEDICAL</h3>
+                <div class="widget-content">
+                  <ul class="vk-widget-content-2">
+                    <li><a href="http://www.resortmedical.net/la-presse-parle-de-nous.php"><i class="fa fa-angle-right" aria-hidden="true"></i> La presse parle de nous</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCf4w5Bg66qURMeCWBUT54mw/videos" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i> RESORT MEDICAL YOUTUBE</a></li>
+                    <li><a href="http://www.resortmedical-convalescence.com/" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i> CENTRE DE CONVALESCENCE</a></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+		  
+		         <div class="footer-main-content-element col-sm-5">
+            <aside class="widget">
+              <div class="vk-widget-footer-2">
+                <h3 class="widget-title"> RESORT MEDICAL</h3>
+				<h5><a onclick="if(this.click) document.getElementById(&#39;blockid&#39;).style.display=&#39;block&#39;; else document.getElementById(&#39;blockpaiement&#39;).style.display=&#39;none&#39;; " style="color:#aeaeae; cursor:pointer"><i class="fa fa-angle-right" aria-hidden="true"></i> Les franchises en Tunisie</a></h5>
+                <div class="widget-content">
+				
+                 <p id="blockid" style="display: none;color:#aeaeae"><br><em>RESORT MEDICAL est  franchiseur</em><br>
+    <em>Nous proposons 2  franchises RESORT MEDICAL en Tunisie pour 2020,  Puis une franchise au  Maroc</em>
+<br><br>
+  <em>Contacter  le Docteur DELESTANG tel&nbsp;: 00216 55 706 695</em></p>
+  
+  
+                </div>
+              </div>
+            </aside>
+          </div>
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="copyright-content">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="copyright-text"> <span>RESORT MEDICAL </span> - Maison de retraite. Design by <span><a href="https://www.web4tunisia.com/">WEB4TUNISIA</a></span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="./RESORT MEDICAL_files/jquery.min.js.téléchargement"></script> 
+<script src="./RESORT MEDICAL_files/jquery1.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/owl.carousel.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/bootstrap.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/jquery.counterup.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/isotope.pkgd.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/jquery-ui.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/bootstrap-datepicker.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/bootstrap-datepicker.tr.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/moment.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/wow.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/bootstrap-datetimepicker.js.téléchargement" charset="UTF-8"></script>
+<script src="./RESORT MEDICAL_files/bootstrap-datetimepicker.fr.js.téléchargement" charset="UTF-8"></script>
+<script src="./RESORT MEDICAL_files/picturefill.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/lightgallery.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/lg-pager.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/lg-autoplay.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/lg-fullscreen.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/lg-zoom.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/lg-hash.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/lg-share.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/jquery.nice-select.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/semantic.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/parallax.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/jquery.nicescroll.min.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/jquery.sticky.js.téléchargement"></script>
+<script src="./RESORT MEDICAL_files/main.js.téléchargement"></script>
+
+</div><div id="toTop" style="display: block;"><div class="btn btn-totop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div></div></body></html>
